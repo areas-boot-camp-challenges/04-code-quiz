@@ -11,3 +11,26 @@
 // - When the user finishes the quiz or time runs out, end the quiz.
 // - Bonus: Use Bootstrap for UI.
 
+// Save the start button element
+let startButton = document.getElementById("start-button")
+let secondsLeft = 10
+console.log(secondsLeft) // ** display countdown
+
+// Start the quiz
+function startQuiz() {
+
+  function countdown() {
+    secondsLeft--
+    console.log(secondsLeft) // ** display seconds left
+    if (secondsLeft === 0) {
+      clearInterval(timer)
+      console.log("Time’s up!")
+    }
+  }
+
+  let timer = setInterval( countdown, 1000 )
+
+}
+
+// Add listener to start button
+startButton.addEventListener("click", startQuiz)
