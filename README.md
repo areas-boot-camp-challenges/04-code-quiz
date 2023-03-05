@@ -19,7 +19,7 @@ A web app that tests your JavaScript skills!
 
 
 ## Features
-The app starts a timer when the user click â€œStartâ€�. The user gets 75 seconds to finish.
+The app starts a timer when the user click “Start”. The user gets 75 seconds to finish.
 
 
 ## Installation
